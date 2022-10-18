@@ -108,3 +108,41 @@ body {
   color: rgb(80, 80, 80);
   margin-top: 3px;
 }
+
+.hero-container {
+  padding: 20px;
+}
+
+@media screen and (min-width: 480px) {
+  .hero-container {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+}
+
+.hero-img img {
+  max-width: 100%;
+}
+
+.hero-text h2 {
+  font-size: 28px;
+  margin-top: 8px;
+}
+
+.hero-text p {
+  font-size: 16px;
+  margin-top: 8px;
+}
+
+.hero-text button {
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 16px;
+  border: none;
+  width: 100%;
+  padding: 12px;
+  background-color: rgb(225, 225, 225);
+  cursor: pointer;
+}

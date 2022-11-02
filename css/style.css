@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: "Red Hat Display", sans-serif;
 }
 
 body {
@@ -209,7 +209,7 @@ body {
 }
 
 .prime-img {
-  background-image: url('https://m.media-amazon.com/images/I/718sH+IPbIL.jpg');
+  background-image: url("https://m.media-amazon.com/images/I/718sH+IPbIL.jpg");
   height: 165px;
   background-position: center;
   background-size: 100%;
@@ -404,4 +404,91 @@ body {
   padding: 10px 15px;
   border: none;
   outline: none;
+}
+
+.mentor-card {
+  width: 375px;
+  color: hsl(224, 23%, 55%);
+  background-color: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 5px 40px 20px hsla(224 23% 55% / 0.1),
+    0 3px 20px 20px hsla(224 23% 55% / 0.05);
+}
+
+.mentor-img img {
+  max-width: 100%;
+}
+
+.mentor-card-body {
+  padding: 30px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.mentor-card-body h2 {
+  color: hsl(223, 47%, 23%);
+  margin-bottom: 20px;
+  font-weight: 900;
+}
+
+.mentor-card-body .mentor-parrafo {
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.mentor-plan {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  background-color: hsl(225, 100%, 98%);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.mentor-plan button {
+  border: none;
+  background-color: transparent;
+  text-decoration: underline;
+  font-weight: 700;
+  color: hsl(245, 75%, 52%);
+  cursor: pointer;
+}
+
+.mentor-plan-text {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  text-align: left;
+}
+
+.mentor-plan-text h3 {
+  color: hsl(223, 47%, 23%);
+  font-size: 18px;
+}
+
+.mentor-botones {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+}
+
+.mentor-botones .boton-primario {
+  border: none;
+  background-color: hsl(245, 75%, 52%);
+  color: hsl(225, 100%, 98%);
+  padding: 15px 0;
+  border-radius: 10px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.mentor-botones .boton-secundario {
+  color: inherit;
+  border: none;
+  font-weight: 900;
+  background-color: transparent;
+  cursor: pointer;
 }

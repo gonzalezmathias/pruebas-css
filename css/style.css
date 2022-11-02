@@ -149,6 +149,8 @@ body {
 
 .mathi-card-container {
   padding: 40px;
+  display: flex;
+  justify-content: center;
 }
 
 .mathi-card {
@@ -252,4 +254,152 @@ body {
   outline: none;
   cursor: pointer;
   font-weight: 600;
+}
+
+.yt-card {
+  background-color: black;
+  color: #fafafa;
+  width: 560px;
+}
+
+.yt-anuncio {
+  display: flex;
+  gap: 20px;
+  padding: 15px;
+  align-items: center;
+  border-bottom: 1px solid rgb(255 255 255 / 0.15);
+}
+
+.yt-anuncio img {
+  border-radius: 50px;
+}
+
+.yt-anuncio h3 {
+  margin-bottom: 5px;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.yt-anuncio p {
+  font-weight: 600;
+}
+
+.yt-anuncio span {
+  font-weight: 500;
+  color: rgb(146, 146, 146);
+}
+
+.yt-anuncio-boton {
+  margin-left: auto;
+}
+
+.yt-anuncio-boton .boton-primario {
+  background-color: rgb(64, 163, 252);
+  padding: 12px 22px;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 50px;
+  margin-right: 15px;
+}
+
+.yt-anuncio-boton .boton-secundario {
+  font-size: 22px;
+  font-weight: bold;
+  color: #fafafa;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.yt-text-player {
+  padding: 20px;
+}
+
+.yt-player-vistas {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-top: 10px;
+  color: rgb(146, 146, 146);
+}
+
+.yt-info-perfil {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.yt-info-content {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+
+.yt-name-perfil {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.yt-name-perfil p {
+  color: rgb(146, 146, 146);
+}
+
+.yt-btn-gris {
+  padding: 10px 15px;
+  border-radius: 50px;
+  font-size: 18px;
+  background-color: rgb(28, 28, 28);
+  color: #fafafa;
+}
+
+.yt-img-perfil img {
+  border-radius: 50px;
+}
+
+.yt-acciones {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.yt-comentarios {
+  padding: 10px 15px;
+  border-radius: 15px;
+  font-size: 18px;
+  background-color: rgb(28, 28, 28);
+  color: #fafafa;
+  margin-top: 20px;
+}
+
+.yt-comentarios-titulo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.yt-comentarios-titulo p {
+  color: rgb(146, 146, 146);
+}
+
+.yt-comentario {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.yt-comentario img {
+  border-radius: 50px;
+}
+
+.yt-comentario button {
+  color: white;
+  background-color: transparent;
+  padding: 10px 15px;
+  border: none;
+  outline: none;
 }

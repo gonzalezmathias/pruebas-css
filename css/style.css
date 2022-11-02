@@ -155,9 +155,11 @@ body {
 
 .mathi-card {
   width: 300px;
-  background-color: rgb(235, 235, 235);
+  background-color: white;
+  border: 1px solid rgb(0 0 0 / 0.1);
   padding: 15px;
   border-radius: 8px;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
 }
 
 .mathi-card-info {
@@ -207,7 +209,7 @@ body {
 }
 
 .prime-img {
-  background-image: url("https://m.media-amazon.com/images/I/718sH+IPbIL.jpg");
+  background-image: url('https://m.media-amazon.com/images/I/718sH+IPbIL.jpg');
   height: 165px;
   background-position: center;
   background-size: 100%;

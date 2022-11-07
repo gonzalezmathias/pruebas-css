@@ -293,6 +293,8 @@ body {
 
 .yt-anuncio-boton {
   margin-left: auto;
+  display: flex;
+  align-items: center;
 }
 
 .yt-anuncio-boton .boton-primario {
@@ -311,6 +313,8 @@ body {
   border: none;
   outline: none;
   background-color: transparent;
+  display: flex;
+  align-items: center;
 }
 
 .yt-text-player {

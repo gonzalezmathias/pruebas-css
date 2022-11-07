@@ -1,13 +1,21 @@
+:root {
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1),
+    0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Red Hat Display", sans-serif;
 }
 
 body {
   background-color: rgb(228, 228, 231);
-  padding: 0 16px;
+  padding: 0 10px;
+  font-family: sans-serif;
 }
 
 .container {
@@ -262,6 +270,7 @@ body {
   background-color: black;
   color: #fafafa;
   width: 560px;
+  font-family: "Roboto", sans-serif;
 }
 
 .yt-anuncio {
@@ -410,6 +419,7 @@ body {
   width: 375px;
   color: hsl(224, 23%, 55%);
   background-color: white;
+  font-family: "Red Hat Display", sans-serif;
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 5px 40px 20px hsla(224 23% 55% / 0.1),
@@ -491,4 +501,244 @@ body {
   font-weight: 900;
   background-color: transparent;
   cursor: pointer;
+}
+
+.mentor-dos-card {
+  width: 355px;
+  background-color: hsl(257, 40%, 49%);
+  background-image: url(../assets/bg-mobile.svg);
+  background-repeat: no-repeat;
+  padding: 40px;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+
+.mentor-dos-logo img {
+  width: 150px;
+}
+
+.mentor-dos-ilustracion img {
+  max-width: 100%;
+}
+
+.mentor-dos-body {
+  text-align: center;
+  font-size: 16px;
+  padding: 65px 0;
+}
+
+.mentor-dos-body h1 {
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+
+.mentor-dos-body p {
+  line-height: 1.5;
+}
+
+.mentor-dos-body button {
+  margin-top: 20px;
+  padding: 10px 80px;
+  border-radius: 50px;
+  background-color: white;
+  color: hsl(257, 40%, 49%);
+  font-weight: inherit;
+  border: none;
+}
+
+.mentor-dos-redes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.mentor-dos-redes a {
+  color: white;
+}
+
+.mentor-dos-redes .icon {
+  border: 1px solid white;
+  border-radius: 50px;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (min-width: 460px) {
+  .mentor-dos-card {
+    width: 100%;
+    background-image: url(../assets/bg-desktop.svg);
+    background-size: cover;
+  }
+  .mentor-dos-body {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    text-align: left;
+    padding-bottom: 0;
+    justify-content: space-between;
+  }
+
+  .mentor-dos-body > *:first-child {
+    flex-basis: 60%;
+  }
+
+  .mentor-dos-body > *:last-child {
+    flex-basis: 40%;
+  }
+
+  .mentor-dos-body button {
+    padding: 10px 45px;
+  }
+
+  .mentor-dos-body p {
+    font-size: 14px;
+  }
+
+  .mentor-dos-redes {
+    justify-content: end;
+  }
+}
+
+.profile-card {
+  width: 375px;
+  box-shadow: var(--shadow-md);
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: hsl(229, 23%, 23%);
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: white;
+  text-align: center;
+}
+
+.profile-top img {
+  width: 100%;
+}
+
+.profile-mid img {
+  border-radius: 50%;
+  margin-top: -60px;
+  margin-bottom: 18px;
+  border: 6px solid white;
+}
+
+.profile-mid .profile-name {
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.profile-mid .profile-name span {
+  font-weight: 400;
+  color: hsl(0, 0%, 59%);
+  margin-left: 8px;
+}
+
+.profile-mid .profile-city {
+  color: hsl(0, 0%, 59%);
+  font-size: 16px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid rgb(0 0 0 / 0.1);
+}
+
+.profile-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 28px;
+}
+
+.profile-stats > div > *:first-child {
+  font-weight: 700;
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+
+.profile-stats > div > *:last-child {
+  font-size: 12px;
+  color: hsl(0, 0%, 59%);
+  letter-spacing: 1.7px;
+}
+
+.ether-card {
+  width: 375px;
+  box-shadow: var(--shadow-md);
+  background-color: hsl(216, 50%, 16%);
+  color: hsl(215, 51%, 70%);
+  border-radius: 16px;
+  overflow: hidden;
+  padding: 25px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.ether-top img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.ether-mid {
+  margin-top: 25px;
+}
+
+.ether-mid .ether-titulo {
+  font-size: 26px;
+  font-weight: 600;
+  color: white;
+}
+
+.ether-mid .ether-desc {
+  margin-top: 15px;
+  line-height: 1.5;
+  font-family: inherit;
+}
+
+.ether-stats {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.ether-stats > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.ether-stats > div:first-child > img {
+  width: 14px;
+}
+
+.ether-stats > div:last-child > img {
+  width: 20px;
+}
+
+.ether-stats > div:first-child > p {
+  color: hsl(178, 100%, 50%);
+  font-weight: 400;
+}
+
+.ether-bottom img {
+  width: 40px;
+  border: 1px solid white;
+  border-radius: 50px;
+}
+
+.ether-bottom {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+  border-top: 1px solid hsl(215, 32%, 27%);
+  padding-top: 20px;
+}
+
+.ether-bottom > p > span {
+  color: white;
 }
